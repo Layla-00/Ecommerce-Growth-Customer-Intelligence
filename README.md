@@ -1,8 +1,10 @@
 # 🛒# E-Commerce Growth & Customer Intelligence Analytics
 
+
+
 An end-to-end Data Analytics project analyzing customer conversion funnels, revenue patterns, product ratings, and operational bottlenecks to support executive decision-making.
 
----
+
 
 ## 📌# 1. Introduction & Business Questions
 
