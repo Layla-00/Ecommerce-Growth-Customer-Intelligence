@@ -1,49 +1,206 @@
 # 🛒# E-Commerce Growth & Customer Intelligence Analytics
 
+An end-to-end e-commerce analytics case study focused on understanding revenue performance, customer behavior, conversion funnel performance, and order failure patterns.
+
+The project combines SQL, PostgreSQL, Power BI, DAX, Power Query, and Python to transform raw e-commerce data into actionable business insights.
 
 
-An end-to-end Data Analytics project analyzing customer conversion funnels, revenue patterns, product ratings, and operational bottlenecks to support executive decision-making.
+## 📌 Executive Summary 
+
+This analysis examines e-commerce transactions and customer behavior to identify opportunities for improving revenue efficiency, conversion, and customer experience.
+
+
+# Key Metrics
+-Total Revenue: $11.92M
+-Total Orders: 20,000
+-Total Customers: 8,635
+-Average Order Value (AOV): $595.93
+-Average Orders per Customer: 2.32
+-Purchase Conversion Rate: 32.9%
+-Revenue from High-Value Customers: 83.75%
 
 
 
-## 📌# 1. Introduction & Business Questions
+## #  Main Business Insights
+ 
+-A significant proportion of customers who added products to their cart did not complete a purchase.
+-Cancelled and returned orders represent a substantial share of total orders.
+-Several products show unusually high order failure rates.
+-Product ratings and order failure were analyzed together to identify products requiring further investigation.
+-Revenue is highly concentrated among high-value customers, highlighting the importance of customer retention and value management.
 
-E-commerce platforms face continuous challenges with user drop-offs and operational inefficiencies that impact profitability. This project analyzes transactional and user engagement data to answer key strategic questions:
+The analysis suggests that growth opportunities are not limited to acquiring more customers. Improving cart conversion, product performance, and order fulfillment may also have a meaningful impact on revenue efficiency and customer experience.
 
-- **Conversion Efficiency:** Where do customer drop-offs occur within the conversion funnel?
-- **Revenue Drivers:** Which products drive the highest revenue?
-- **Operational Performance:** What is the overall order failure rate, and which fulfillment stages are most impacted?
-- **Customer Experience:** How are customer ratings and reviews distributed across the product catalog?
 
----
 
-## 🛠️ # 2. Tech Stack & Tools
+## 📊 Power BI Dashboard Overview
 
-- **Database:** PostgreSQL
-- **Data Processing & Pipeline:** Python, Pandas, SQLAlchemy
-- **Visualization & Dashboard:** Power BI
-- **IDE & Tools:** VS Code (Jupyter Notebooks, SQL Tools), Git & GitHub
+### Page 1: Executive Overview
+![Executive Overview](powerbi/page1_overview.png)
 
----
 
-## 📂 # 3. Repository Structure
+Key Metrics: Total Revenue ($11.92M), Total Orders (20,000), Avg Order Value ($595.93).
 
-```text
-├── data/ # Raw and cleaned datasets
-├── notebooks/ # Jupyter Notebooks (eda.ipynb)
-├── sql/ # SQL analysis scripts (analysis.sql)
-├── powerbi/ # Power BI report files (.pbix) & Screenshots
-│ ├── page1_overview.png
-│ ├── page2_customer.png
-│ └── page3_operations.png
-└── README.md # Master project documentation
+Core Visuals: Conversion Funnel, Order Status Distribution, Monthly Revenue Trend, Top 10 Products.
+
+
+### Page 2: Customer Intelligence
+![Customer Intelligence](powerbi/page2_customer.png)
+
+
+Key Metrics: Avg Orders per Customer (2.32).
+
+Core Visuals: Top 10 Cities by Revenue, Customer Revenue Segmentation, User Engagement Journey.
+
+
+
+### Page 3: Product & Operations
+![Product & Operations](powerbi/page3_operations.png)
+
+
+ Key Metrics: Cancelled & Returned Orders (~40%)
+
+Core Visuals: Product Failure Analysis, Failure Rate vs. Customer Rating, Product Ratings & Review Volume.
+
+
+## Business Problem
+
+E-commerce businesses need to understand not only how much revenue they generate, but also where revenue opportunities and operational problems exist.
+
+This analysis was designed to investigate customer behavior across the purchasing funnel, identify major revenue drivers, evaluate order performance, and highlight products that may require operational or customer-experience attention.
+
+
+## Business Questions
+
+The analysis was designed to answer the following questions:
+
+Where are customers dropping off in the e-commerce conversion funnel?
+Which products and customer segments contribute most to revenue?
+How significant are cancelled and returned orders?
+Which products show unusually high order failure rates?
+Is there an observable relationship between product ratings and order failure?
+Which findings represent the most actionable opportunities for improving growth and customer experience?
+
+
+## Key Findings
+
+# Executive Performance
+-Total revenue reached $11.92M across 20,000 orders.
+-Average Order Value (AOV) was $595.93.
+-Customers placed an average of 2.32 orders each.
+
+## Conversion Funnel
+
+-70.21% of users who viewed products added items to their cart.
+-53.09% of users who added items to their cart did not complete a purchase.
+-This indicates a meaningful opportunity to improve the transition from purchase intent to completed transactions.
+
+## Order Performance
+
+-Approximately 40% of orders were either cancelled or returned.
+-Cancelled orders represented 19.60%.
+-Returned orders represented 20.33%.
+
+
+## Customer Intelligence
+
+-High-value customers contributed approximately 83.75% of total revenue.
+-This concentration highlights the importance of retaining and understanding high-value customer segments.
+
+## Product & Customer Experience
+
+-Several products showed failure rates between 65% and 70%.
+-Among the highlighted high-failure products, Astra Hundred had the lowest average rating at 3.55/5.
+
+
+## 💡 Business Recommendations
+
+1. # Investigate High-Failure Products
+Prioritize products with unusually high cancellation and return rates.
+
+Areas to investigate include:
+
+-Supplier quality
+-Product descriptions
+-Customer complaints
+-Return reasons
+-Fulfillment performance
+
+2. # Improve Cart Recovery
+The high cart abandonment rate indicates an opportunity to recover customers who have already demonstrated purchase intent.
+
+Potential actions include:
+
+-Abandoned-cart reminders
+-Targeted incentives
+-Personalized follow-up campaigns
+-Checkout experience improvements
+
+3. # Improve Product Information
+For products with high return rates, review:
+
+-Product descriptions
+-Product images
+-Sizing or specifications
+-Customer expectations
+-Review content
+
+Improving product information may help reduce expectation gaps that contribute to returns.
+
+4. # Monitor Product Performance
+Create a recurring product-level monitoring process combining:
+
+-Revenue
+-Orders
+-Failure rate
+-Customer rating
+-Review volume
+
+This would help identify products requiring operational or customer-experience intervention.
+
+5. # Focus on High-Value Customers
+Because a large proportion of revenue comes from high-value customers, the business should monitor:
+
+-Repeat purchasing behavior
+-Customer lifetime value
+-Purchase frequency
+-Retention
+-Revenue concentration
+
+This can support more targeted retention and customer-growth strategies.
+
+
+## 🛠️ Tools & Technologies
+
+- PostgreSQL — Data querying and analysis
+- SQL — Business analysis, aggregations, CTEs, funnel analysis
+- Power BI — Interactive dashboard development
+- DAX — Business metrics and calculated measures
+- Power Query — Data transformation
+- Python / Jupyter Notebook — Exploratory data analysis
+- Git & GitHub — Version control and project management
+
+
+## 📂 Data
+The project uses e-commerce datasets containing information related to:
+
+-Orders
+-Customers
+-Products
+-Product ratings and reviews
+-Customer events
+-Purchase funnel activity
+
+The data was loaded into PostgreSQL for structured analysis and connected to Power BI for visualization.
+
 
 ```
+```
+## 🔍  Data Analysis with SQL
+Key analytical steps executed in `sql/analysis.sql`:
 
-## 🔍 4. Data Analysis with SQL
-Key analytical steps executed in analysis.sql:
+- **Conversion Funnel Modeling: Tracked movement from product views to cart additions, wishlists, and final purchases.
 
-Conversion Funnel Modeling: Tracked movement from views to cart additions and final purchases.
 Order Failure Analysis: Segmented order statuses to identify cancelled and returned orders.
 Product Quality Analysis: Cross-analyzed failure rates against average product review ratings.
 
@@ -65,65 +222,47 @@ ROUND(100.0 * cart_users / NULLIF(view_users, 0), 2) AS view_to_cart_pct,
 ROUND(100.0 * purchase_users / NULLIF(cart_users, 0), 2) AS cart_to_purchase_pct,
 ROUND(100.0 * purchase_users / NULLIF(view_users, 0), 2) AS overall_conversion_pct
 FROM funnel;
+
 ```
 
-## 📊 5. Power BI Dashboard Overview
+## Repository Structure
+Ecommerce-Growth-Customer-Intelligence/
+│
+├── README.md
+├── business_questions.md
+├── findings.md
+├── recommendations.md
+├── limitations.md
+│
+├── data/
+│
+├── notebooks/
+│   └── eda.ipynb
+│
+├── sql/
+│   └── analysis.sql
+│
+└── powerbi/
+    ├── page1_overview.png
+    └── page2_customer.png
+    └── page3_Operations.png
 
-### Page 1: Executive Overview
-![Executive Overview](screenshots/page1_overview.png)
-
-
-Key Metrics: Total Revenue ($11.92M), Total Orders (20,000), Avg Order Value ($595.93).
-
-Core Visuals: Conversion Funnel, Order Status Distribution, Monthly Revenue Trend, Top 10 Products.
-
-
-### Page 2: Customer Intelligence
-![Customer Intelligence](screenshots/page2_customer.png)
-
-
-Key Metrics: Avg Orders per Customer (2.32).
-
-Core Visuals: Top 10 Cities by Revenue, Customer Revenue Segmentation, User Engagement Journey.
-
-
-
-### Page 3: Product & Operations
-![Product & Operations](screenshots/page3_operations.png)
-
-
- Key Metrics: Overall Order Failure Rate (~40%).
-
-Core Visuals: Product Failure Analysis, Failure Rate vs. Customer Rating, Product Ratings & Review Volume.
-
+## 📈 Analytical Limitations
+-The analysis identifies patterns and associations in the available data but does not establish causal relationships.
+-Product ratings and order failure rates were analyzed together, but the relationship does not prove that lower ratings directly cause order failures.
+-Additional information such as return reasons, customer demographics, acquisition channels, and fulfillment-level details could provide deeper insight into the observed patterns.
+-The recommendations are based on the available dataset and should be validated against operational and customer-level data before implementation.
 
 
-## 📈 6. Key Findings & Business Story
+## 🎯 Conclusion
+The analysis highlights several opportunities to improve e-commerce performance beyond simply increasing customer acquisition.
 
-Executive KPIs...
+The most significant opportunities identified are related to:
 
-- Total Orders: 20,000
-- Total Revenue: $11.92M
-- Average Order Value: $595.93
+-Improving cart-to-purchase conversion
+-Investigating products with high failure rates
+-Reducing cancellations and returns
+-Improving product information and customer expectations
+-Understanding and retaining high-value customers
 
-## Conversion Funnel Analysis
-- View-to-Cart Rate: 70.21% of visitors add products to cart.
-- Cart Abandonment: 53.09% of users who add products to cart do not complete a purchase.
-
-## Order Failure Rate
-- ~40% of orders were either cancelled (19.60%) or returned (20.33%).
-
-## Root Cause Analysis
-- Products such as Willow Woman, Pulse Race, and Astra Hundred showed failure rates between 65% and 70%.
-- Astra Hundred had the lowest average customer rating (3.55/5) among the analyzed high-failure products, indicating a potential relationship between product issues and customer dissatisfaction.
-
-
-## 🎯 7. Actionable Business Recommendations
-
-Product Audit: Review supplier quality and product-level issues for high-failure products such as Astra Hundred and Willow Woman.
-Cart Recovery: Use automated email triggers and targeted incentives to recover abandoned carts.
-UX & Sizing Guidelines: Improve product descriptions and sizing information to set more accurate customer expectations and potentially reduce returns.
-
-
-##  8. Conclusion & Closing Thoughts
-This end-to-end analysis bridges raw transactional data with operational strategy. By addressing funnel drop-offs and investigating high-failure products, the business can potentially reduce order failures and improve customer retention.
+Together, these insights provide a data-driven starting point for improving revenue efficiency, customer experience, and e-commerce growth.
