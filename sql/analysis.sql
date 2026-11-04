@@ -1,6 +1,7 @@
 -- ================================================
 -- 1. EXECUTIVE SUMMARY: CORE KPIs
 -- ================================================
+
 SELECT
 COUNT(DISTINCT order_id) AS total_orders,
 COUNT(DISTINCT user_id) AS total_customers,
